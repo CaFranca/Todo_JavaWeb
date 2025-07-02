@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  background-color: #e5e5e5; /* Cor mais suave para o fundo */
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,52 +8,81 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 .container {
-  background: #fff;
+  background: #ffffff; /* Fundo branco para contrastar bem */
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  border-radius: 8px; /* Bordas mais arredondadas para suavizar o visual */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Aumentei um pouco a largura para mais conforto visual */
 }
+
 h1 {
   text-align: center;
+  color: #333; /* Cor mais escura para o título */
+  font-size: 1.8em; /* Tamanho de fonte ajustado */
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
+
 li {
-  background: #f9f9f9;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 3px;
+  background: #f2f8fc; /* Um tom muito suave de azul para um visual fresco */
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 8px; /* Bordas mais arredondadas para suavizar */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1em;
+  color: #333;
+  transition: all 0.3s ease; /* Adiciona uma transição suave para efeitos */
 }
+
+li:hover {
+  background: #d1e3f5; /* Efeito de hover com uma cor levemente mais intensa */
+}
+
 button {
-  background: #ff6347;
+  background: #6c5ce7; /* Cor mais suave e moderna */
   border: none;
   color: white;
-  padding: 5px 10px;
-  border-radius: 3px;
+  padding: 8px 15px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
 }
+
 button:hover {
-  background: #ff4500;
+  background: #5a4cc1; /* Cor mais intensa no hover */
 }
+
 input[type="text"] {
   width: calc(100% - 22px);
-  padding: 10px;
-  margin: 10px 0;
+  padding: 12px;
+  margin: 12px 0;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #6c5ce7; /* Borda roxa ao focar no input */
+  outline: none;
 }
 
 .center-content {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   text-align: center;
-  padding: 5px;
+  padding: 8px;
+}
+
+.center-content button {
+  font-size: 1.1em; /* Ajustando o tamanho do botão para os elementos do centro */
 }
